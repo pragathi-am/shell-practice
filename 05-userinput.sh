@@ -3,5 +3,5 @@
 # taking input from user and print it 
 
 echo "what is your name :: "
-Read user_name
+read user_name
 echo "person name is : $user_name" 
