@@ -6,4 +6,5 @@
 var1=$(date)
 echo "script executed at $var1"
 sleep 10
-echo "script stopped at $var1"
+var2=$(date)
+echo "script stopped at $var2"
