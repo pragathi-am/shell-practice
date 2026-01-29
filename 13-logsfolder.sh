@@ -20,7 +20,7 @@ fi
 }
 
 echo " installing ngnix"
-dnf install nginxpt -y &>> $LOGS_FILE    # store command output to logfile
+dnf install nginx -y &>> $LOGS_FILE    # store command output to logfile
 
 # call validate function here after installation by passing args exitcode $? and pkgname
 
