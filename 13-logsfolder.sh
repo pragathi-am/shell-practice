@@ -5,7 +5,8 @@ userid=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
 if [ $userid -ne 0 ]; then
-   echo " please run with sudo user" | tee -a $LOGS_FILE
+   echo " please run with sudo user" | tee -a $LOGS_FILE  # tee writes screen output to log file by apend mode
+   
    exit 1
 fi
 
