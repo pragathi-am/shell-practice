@@ -28,7 +28,7 @@ validate $? "nginx"
 echo " installing mysql"
 dnf install mysql -y 
 
-validate $? "mysql"
+validate $? "mysqlll"
 
 echo " installing nodejs"
 dnf install nodejs -y 
