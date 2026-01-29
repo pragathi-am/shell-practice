@@ -19,7 +19,7 @@ fi
 }
 
 echo " installing ngnix"
-dnf install nginx -y 
+dnf install nginxpt -y 
 
 # call validate function here after installation by passing args exitcode $? and pkgname
 
@@ -28,7 +28,7 @@ validate $? "nginx"
 echo " installing mysql"
 dnf install mysql -y 
 
-validate $? "mysqlll"
+validate $? "mysql"
 
 echo " installing nodejs"
 dnf install nodejs -y 
