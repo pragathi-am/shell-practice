@@ -10,11 +10,11 @@ fi
 
 # this function will not execute by shell. it will execute only when it being called .
 validate() {
-  if [ $? -ne 0 ]; then 
-   echo " nginx installed failed"
+  if [ $1 -ne 0 ]; then 
+   echo " $2 installed failed"
    exit 1
 else
-   echo " nginx installed success"
+   echo " $2 installed success"
 fi   
 }
 
