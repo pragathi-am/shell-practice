@@ -5,17 +5,17 @@ userid=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
 if [ $userid -ne 0 ]; then
-   echo " please run with sudo user"
+   echo " please run with sudo user" | tee -a $LOGS_FILE
    exit 1
 fi
 
 # this function will not execute by shell. it will execute only when it being called .
 validate() {
   if [ $1 -ne 0 ]; then 
-   echo " $2 installed failed"
+   echo " $2 installed failed" | tee -a $LOGS_FILE
    exit 1
 else
-   echo " $2 installed success"
+   echo " $2 installed success" | tee -a $LOGS_FILE
 fi   
 }
 
